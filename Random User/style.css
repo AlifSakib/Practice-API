@@ -10,3 +10,19 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
+
+#icons .fa-solid {
+  font-size: 25px;
+  padding: 20px;
+  color: white;
+}
+
+.user {
+  background-color: lightgreen;
+  padding: 20px;
+}
+
+.user img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
