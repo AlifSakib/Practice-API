@@ -9,6 +9,7 @@ const displayUser = (users) => {
 
   users.forEach((user) => {
     const { title, first, last } = user.name;
+
     const { medium } = user.picture;
     const {
       street: { number, name },
@@ -21,7 +22,7 @@ const displayUser = (users) => {
     userDiv.innerHTML = `
             <img src="${medium}" alt="" />
             <p>Hi, My Name is</p>
-            <h3 id="info" >${title} ${first} ${last}</h3>
+            <h3 id="info" >${title} ${title} ${title}</h3>
             <div id="icons">
             <i class="fa-solid fa-address-card"></i>
             <i id="email" class="fa-solid fa-message"></i>
@@ -35,7 +36,7 @@ const displayUser = (users) => {
     const info = document.getElementById("info");
     const icons = document
       .getElementById("icons")
-      .addEventListener("mouseover", function (e) {
+      .addEventListener("click", function (e) {
         if (e.target.id === "location") {
           info.innerText = name;
         } else if (e.target.id === "dob") {
